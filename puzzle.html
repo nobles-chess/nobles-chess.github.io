@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="yikes style.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+<style>
+body {
+	background-color: #4a6e93;
+}
+</style>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn white" onclick="closeNav()">&times;</a>
+  		<a href="index.html" class="hvr-grow blurry">HOME</a>
+  		<a href="about.html" class="hvr-grow blurry">ABOUT</a>
+  		<a href="#" class="hvr-grow active" id="press">PUZZLE</a>
+	</div>
+
+	<script>
+		function openNav() {
+    		document.getElementById("mySidenav").style.width = "450px";
+		}
+
+		function closeNav() {
+    		document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+	<div id="modal-citizen" class="modal">
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<p>You're already on this page...</p>
+  		</div>
+	</div>
+
+	<script>
+		var modal = document.getElementById("modal-citizen");
+		var btn = document.getElementById("press");
+		var span = document.getElementsByClassName("close")[0];
+		btn.onclick = function() {
+    		modal.style.display = "block";
+		}
+
+		span.onclick = function() {
+    		modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+    		}
+		}
+	</script>
+	<div class="bread">
+		<div class="biggie">
+    		<h2>Tactics Page</h2>
+    		<p>This is the tactics page. I might post tactics here every week if I remember. You can submit your answers to these puzzles to nobles.chess.club@gmail.com with the correct move notation. To notate moves visit <a href="http://blog.chesshouse.com/how-to-read-and-write-algebraic-chess-notation/">here </a> and learn, or just describe the moves the best you can. The person who gets the most correct tactics by the end of the year will get some reward if I can remember. </p>
+  		</div>
+
+  		<div class="fixy-wixy">
+  			<div class="puzzle-box"><img src="yummy.png" style="height: 600px; width: 600px;"></div>
+  			<p>White to move. Spot mate in 3 for 1 point, but mate in 2 for 3 points.</p>
+  		</div>
+  	</div>
+	<div class="top-top-left">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		</span>
+	</div>
+
+</body>
+
+</html>
