@@ -1,0 +1,444 @@
+/*                                                                                                          ``                                                       
+                                        `-         :hs:.                                                                        `+yho-        -mms`                                                     
+                                        oh         `sMhhhy/.                     :h      ``       `..        `+`                hd--oms`      sNoNd:                                                    
+                                       `N:          /M.`-/yh:                    -N-    :d:     :sssyy:      sm`               sd.   :No     .No -dN/                                                   
+                                       +m`          yd     .                      yh` `od/    .sy-  `+m.    `No       `o:     om.     hN`   .hd`  `hMo                                                  
+                                       dy          .N/                            `mo:ds.    `ds`     hs    +N.       ym.    +Nms.  .omy   :mMo`   `yN/                                                 
+                                      `No          dMy/-`                          sNd:      -M.      +d    dy       /m-    :N/:Mmsyho-    -NdNh-   `:`                                                 
+                                      :M:         -M+/shhs:                        hN.       `mo      +d   .M/      .N/    .m+  Nm/:`     `my :dN+                                                      
+                                      yN`         hd    -+s`                      `mo         :m+     h+   .M+     `hy    .ds  `Nh      .+hm`  `yM+                                                     
+                                      Ny         -M/                              sd`          -dy-`.oy`    hd`   .hy`   `hy`  .My      .dMd.   `/.                                                     
+                                     `ms         hm`                             :N-            -mmhy:      .yh+:+h/     :+    .Mh      `dmdmo`                                                         
+                                      .`        :m:                              h+             `--/`         .:/:`            `hy      `+.`+Nd-                                                        
+                                                 `                                                                                           .dy                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                         `.`          :/`               `:                                        `                                                                                     
+                                       -hhdmo`       -MMm/             `mm          -.`              +-         .oN+   `/.                                                                              
+                                      `dy  .hm-      ym.yMy`          `hMo         oNhms-           -N.         :Mm/   /M.     -oyysso:                                                                 
+                                     `dy     dd     :M/  oMd.        `hhM:        .N: `oNy`         yy          oMd    yh    /ds:...-+ds                                                                
+                                    `hm`     yM.  `/my    /Nd`       hs+N`        yy    .dm`       .N:         .NyM+  -N-   sd`                                                                         
+                                    ymdNo `/dd/   -NMh-    :m+    .hmd yd        :N.     -M/       +M`         hd yN. hh   /M.   :/.                                                                    
+                                   +N.`mMmds-     /N+dMs`         .dshmNo       `d+      .M:       ym         :N- .Ny+M-   oN    /smhy+                                                                 
+                                  :N:  mm`       .N+ `oMd.       :m:  /M/       sh      .dy        my        `ms   oMMy    :M+     `:dM/                                                                
+                                 -m/  `Nd      :dNd    :Ns      :N:   +N`      /m.    :sd/        :M/        +M.   `mM:     /No      +Ms                                                                
+                                -m/   .Mh       sMN+`   `       ds    ym      yMmsooyhs:`         oM.        dd     mMy      :dd/..-+ms                                                                 
+                                `.    `Nm      `my+Nm:          -`    dd      o+.:/:.`            :y`        y/    /Ms+       `/ssso+.                                                                  
+                                       :/       `  .yNs               s/                                           `-                                                                                   
+                                                     /+                                                                                                                                                 
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                   -ss:`            `/    .            `         `-:::-.`                       ./`                                                        `:.             oho.         
+                                   `:odmh/.         /m   :m`          h/        /dyssyyhds`                    omM:   :h`                                                 :dMs   .h:      .Ndmm:        
+                                      :Mshdy/`      sy   oN          :N`        hh     `-h:                    oMy`   yh      -osyy:                       `:osys-        -Md.   +N`      sN..dNo       
+                                      ym` -omo    /sm+   yd          hy         hh                            `mNd`  .N:    .sy:.`:mo                     :yo-`.+m-       yNN.   ds      :N+  `yMs`     
+                                     .N+    .`    -sMdy/.mo         .M:         :Ns:.                         om/M+  sd    -d+`    :N.                   +d-     sh      :N/Ny  /N.    `ymm`    oMs     
+                                     oN`           sy.+dmM-         +M.          -ommy/`                     .N/ yN.:N:    sh       m/                  `N+      -N`    `ds +M/`ms      hNNh-    +/     
+                                     my            m/  `dm          sN             `:hM/                     hh  .Nhdh     +m`      d+                   ds      .M`    om`  dmyN`     /N::dN+          
+                                    :M/           -M.  `mo         `my               `dm                    /M-   +MM:     `dy`    `N-                   :N/     +d    .N+   -MMs    .:Ns  `sMs         
+                                    yN`           om   :M.         :M/               -mo                    dd    `NM.      `yh:  `ss                     :ds.  -d:    sN`    hM/   `yMM-    oo`        
+                                   `Ny            hh   yd          /M-        ----:+yh:                    .No    :MNy        oNysy/                       .dmoys-     dh    `NNd`   /Mmmo`             
+                                   .m+            o:   +-          `:         oyyso/.                      `/`    sh-.        :+oo                          /+y:       /.    :d:.    oo`oNd-            
+                                   ``                                                                                                                                                    .hN-           
+                                                                                                                                                                                          `-            
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                    ``                                                                                                                  
+                                        ``             `-           hs             +MNo`       `/syyso/-                                                                                                
+                                       yN-             do          -M+             mdoNd-      hd/--:+smd.                    d/      .        ..`        +/                                            
+                                      /Mo             -N`          yN`            +M- -mN:    `N+      `+`                    hy    `dy     .shssms`     -M/                                            
+                                     :M+              yh          -M+            -Ns   `dM/    mh                             -N:  /mo     +d:   `ds     sm        /y                                   
+                                    `Ny              `M+          yN` `./oyy`   sMM/    `hM-   -mmy/                           oN-dy.     sd`     -N`   `No       :N:                                   
+                                    ym`              :M:         +NNdhys/-`     oNyMh.   ``      -smmy                         .MN+       ds      `N-   +N`      .N+                                    
+                                   +M:               oM`         yMmm-         :M/ :mN/            `oM/                        /M+        +N.     `N-   hd       yh                                     
+                                  `Nd                mh         .Ny`yN+      /smy   .hM:            `mh                        yd          yd-    /d    sm      om.                                     
+                                  +MNy+-`           .M+         hN.  /Ny`    -mMy.   `-`           -yh.                       :N.           +mo``+h-    :M+   `sd-                                      
+                                  .+.:ohhhho`       .m/        +m:    :My    -NhdNo`        `ssssyhs:                        `m+             sNmd/`      :hh++ho`                                       
+                                        ````         `         ``      +o    .:``oNd-        -::-.`                          /s              ``-.         `.--`                                         
+                                                                                  -h+                                                                                                                   
+                                                                                   `                                                                                                                    
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                              `                                                                                         
+                                                                                                             :-`  .:`                                                                                   
+                                                                                                             --``:+s+                                                                                   
+                                                                                                               `os+oh/`                                                                                 
+                                                                                                               -s/--ss                                                                                  
+                                                                                                              .+y-.oy:                                                         .soysy+yoy+yoysysy.      
+                                                                                                             `y/hh.os-                                                         -hhdydsmymodhdhhhd-      
+                                                                                                              //sh:.sho`                                                        ://y`y.o:+.y.y///       
+                                                                                                                -:+s/:`                                                         oo/y`h`o-s-y.y+::       
+                                                                                                                                                                               -hysyyyyydysysyysh-      
+                                                                                                                                                                               -mdhmdddmMdddddddN-      
+                                                                                                                                                                                                       */
+@import "compass/css3";
+@import "susy";
+
+/* Whole Lotta Font Shit */
+@font-face {
+    font-family: elianto;
+    src: url("Elianto-Regular.ttf");
+}
+
+@font-face {
+    font-family: asimov;
+    src: url("Asimov.otf");
+}
+
+@font-face {
+  font-family: gidole;
+  src: url("Gidole-Regular.otf");
+}
+
+@font-face {
+    font-family: flamante;
+    src: url("Flamante.ttf");
+}
+
+/* Link Coloring */
+.blurry {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+    text-decoration: none;
+}
+
+.white {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: line-through;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);}
+
+.modal-content {
+    background-color: white;
+    text-align: center;
+    font-size: 26px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+body {
+    margin:0;
+    font-family: sans-serif;
+    padding: 0;
+}
+
+.thing {    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("yonks.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.thing h1 {
+    font-size: 6em;
+    font-family: Asimov;
+    color: white  ;
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+.thing .top-left {
+    position: absolute;
+    top: 14px;
+    left: 28px;
+}
+
+.top-top-left {
+  position: absolute;
+  top: 14px;
+  left: 28px;
+  text-align: center;
+}
+
+
+.bar1 {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin: 14px 0px;
+    transition: 0.4s;
+}
+
+.bar2 {
+    width:25px;
+    height: 3px;
+    background-color: white;
+    margin: 14px 0px;
+    transition: 0.4s;
+}
+
+.bar3 {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin: 14px 0px;
+    transition: 0.4s;
+}
+
+
+/* Nav Bar Shit */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .7);
+    overflow-x: hidden;
+    padding-top: 17%;
+    padding-bottom: 17%;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 25px 8px 25px 8px;
+    text-align:center;
+    font-size: 30px;
+    font-family: asimov;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+    text-shadow: 0 0 5px rgba(255,255,255,0);
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.glitch{
+  color:white;
+  font-size:100px;
+  position:relative;
+  width:400px;
+  margin:0 auto;
+}
+
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:white;
+  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+  content:attr(data-text);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue; 
+  top:0;
+  color:white;
+  background:black;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+p {
+  font-family: gidole;
+  font-size: 24px;
+  color: black;
+}
+
+.box {
+  position: static;
+  height: 600px;
+  background-color: #E8E8E8;
+  border: 20px solid #4a6e93;
+  font-family: gidole;
+  margin-top: -15px;
+}
+
+.box-title {
+  position: static;
+  padding-bottom: 20px;
+  background-color:#4a6e93;
+  color: #EDF5E1;
+  text-align: center;
+  font-family: gidole;
+  font-size: 40px;
+}
+
+.box-text {
+  color: #0F4985;
+  font-size: 24px;
+  margin: 30px 50px 30px 50px;
+  line-height: 40px;
+  font-family: gidole;
+  text-indent: 60px;
+  font-weight: 100;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bread {
+  text-align: center;
+  width: 100vw;
+  height: 240px;
+  margin-top: -50px;
+  position: fixed;
+  left: 0px;
+  background-color: #0F4985;
+}
+
+.fixy-wixy {
+  position: relative;
+  top: 90px;
+}
+
+.wrap {
+  margin-left: 430px;
+  margin-right: 430px;
+}
+
+h1 {
+  font-size: 80px;
+  color: #E4ECD9;
+  font-family: gidole;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 80px;
+  color: white;
+  font-family: gidole;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top:0;
+  font-family: gidole;
+  font-size: 20px;
+  color: #E4ECD9;
+  font-weight: 100;
+}
+
+.puzzle-box {
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+  margin-top: -30px;
+  margin-bottom: 15px;
+
+}
+
+.biggie {
+  text-align: center;
+  margin: 0 400px 0 400px;
+}
+
+.head p {
+  font-size: 20px;
+  color: white;
+}
+
+.biggie p {
+  margin-top: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.fixy-wixy p {
+  margin-top: 0;
+  font-size: 20px;
+  color: white;
+}
