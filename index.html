@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="yikes style.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn white" onclick="closeNav()">&times;</a>
+  		<a href="#" class="hvr-grow active" id="press">HOME</a>
+  		<a href="about.html" class="hvr-grow blurry">ABOUT</a>
+  		<a href="puzzle.html" class="hvr-grow blurry">PUZZLE</a>
+	</div>
+
+	<script>
+		function openNav() {
+    		document.getElementById("mySidenav").style.width = "450px";
+		}
+
+		function closeNav() {
+    		document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+	<div id="modal-citizen" class="modal">
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<p>You're already on this page...</p>
+  		</div>
+	</div>
+
+	<script>
+		var modal = document.getElementById("modal-citizen");
+		var btn = document.getElementById("press");
+		var span = document.getElementsByClassName("close")[0];
+		btn.onclick = function() {
+    		modal.style.display = "block";
+		}
+
+		span.onclick = function() {
+    		modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+    		}
+		}
+	</script>
+
+	<section class="thing">
+		<div class="thing-inner">
+			<h1>
+				Chess Club
+			</h1>
+			<div class="top-left">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+				</span>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
