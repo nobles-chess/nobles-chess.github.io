@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="yikes style.css">
+	<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+<style>
+body {
+    background-color: #0F4985;
+}
+</style>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn white" onclick="closeNav()">&times;</a>
+  		<a href="index.html" class="hvr-grow blurry">HOME</a>
+  		<a href="#" class="hvr-grow active" id="press">ABOUT</a>
+  		<a href="puzzle.html" class="hvr-grow blurry">PUZZLE</a>
+	</div>
+
+	<script>
+		function openNav() {
+    		document.getElementById("mySidenav").style.width = "450px";
+		}
+
+		function closeNav() {
+    		document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+	<div id="modal-citizen" class="modal">
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<p>You're already on this page...</p>
+  		</div>
+	</div>
+
+	<script>
+		var modal = document.getElementById("modal-citizen");
+		var btn = document.getElementById("press");
+		var span = document.getElementsByClassName("close")[0];
+		btn.onclick = function() {
+    		modal.style.display = "block";
+		}
+
+		span.onclick = function() {
+    		modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+    		}
+		}
+	</script>
+	<div class="top-top-left">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		</span>
+	</div>
+
+
+	<div class="head">
+    	<h1>Welcome to Chess Club</h1>
+    	<h3>This page is about Chess Club, where we play chess.</h3>
+  	</div>
+  	<div class="wrap">
+    	<div class="box">
+     		<div class="box-title">
+       			Chess and Chess Accessories
+      		</div>
+      		<div class="box-text">
+        		Hello, this is the chess club website. We welcome everyone no matter how good you are. You could be as bad as Emily Bao or as good as me, it doesn't matter. We meet every X-Block in Baker 100. We always have snacks like Oreos and Munchkins, that other leaders bring because I'm a freeloading slacker and can't be bothered with properly leading a club. Chess is THE freshest board game, in the chillest room, and played by the hottest dudes. Y'all are pathetic lol if you play Weiqi. We might host a bughouse tournament if you would like but probably not because who would even organize that. I realized now that I made this box way too big and that I have to write a ton to just fill up this space. If you guys have any input I can change things but I probably will never look at this code again. Chess club also plays against other schools in a league called the ISCLC I think. It's basically just the ISL for chess and we have won like 6 or 7 years in a row now. We play in the Winter every other Monday or so. You actually have to kinda know how to play if you want to be on the team. Come out to club! or don't if you don't want to...
+     		</div>
+    	</div>
+  	</div>
+	
+</body>
+
+</html>
