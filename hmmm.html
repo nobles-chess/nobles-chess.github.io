@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="yikes style.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn white" onclick="closeNav()">&times;</a>
+  		<a href="index.html" class="hvr-grow blurry">HOME</a>
+  		<a href="about.html" class="hvr-grow blurry">ABOUT</a>
+  		<a href="puzzle.html" class="hvr-grow blurry">PUZZLE</a>
+	</div>
+
+	<script>
+		function openNav() {
+			var a=Math.random();
+			if(a<.15) {
+    			document.getElementById("mySidenav").style.width = "450px";
+			}
+			else {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		}
+
+		function closeNav() {
+			var a=Math.random();
+			if(a<.55) {
+    			document.getElementById("mySidenav").style.width = "0";
+    		}
+		}
+	</script>
+	<section class="thing2">
+		<div class="thing2-inner">
+			<h1 class="fontalicious">
+				Haha you silly kid! You got Jingled!
+			</h1>
+			<div class="top-left">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+				</span>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
