@@ -180,7 +180,8 @@ body {
     padding: 0;
 }
 
-.thing {    width: 100vw;
+.thing {
+    width: 100vw;
     height: 100vh;
     display:flex;
     justify-content: center;
