@@ -410,7 +410,7 @@ p {
 h1 {
   font-size: 80px;
   color: #E4ECD9;
-  font-family: flamante;
+  font-family: gidole;
   margin-bottom: 20px;
   margin-top: 40px;
 }
@@ -418,14 +418,14 @@ h1 {
 h2 {
   font-size: 80px;
   color: white;
-  font-family: flamante;
+  font-family: gidole;
   margin-top: 50px;
   margin-bottom: 10px;
 }
 
 h3 {
   margin-top:0;
-  font-family: flamante;
+  font-family: gidole;
   font-size: 20px;
   color: #E4ECD9;
   font-weight: 100;
