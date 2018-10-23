@@ -83,7 +83,7 @@
 @import "compass/css3";
 @import "susy";
 
-/* Whole Lotta Font Shit */
+/* Fonts and stuff */
 @font-face {
     font-family: elianto;
     src: url("Elianto-Regular.ttf");
